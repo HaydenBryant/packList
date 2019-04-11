@@ -72,6 +72,7 @@ document.addEventListener('DOMContentLoaded', function(){
   checkBox1.addEventListener('click', (e) => {
     if(e.target.className == 'unpacked'){
       e.target.className = 'packed';
+      console.log(e.NextSibling.innerText);
     }
     else if(e.target.className == 'packed'){
       e.target.className = 'unpacked';
