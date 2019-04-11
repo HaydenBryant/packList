@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', function(){
 
-  const list = document.querySelector('#book-list ul');
+  const list = document.querySelector('#pack-list ul');
   const forms = document.forms;
 
-  // delete books
+  // delete packs
   list.addEventListener('click', (e) => {
     if(e.target.className == 'delete'){
       const li = e.target.parentElement;
@@ -11,8 +11,8 @@ document.addEventListener('DOMContentLoaded', function(){
     }
   });
 
-  // add books
-  const addForm = forms['add-book'];
+  // add packs
+  const addForm = forms['add-pack'];
   addForm.addEventListener('submit', function(e){
     e.preventDefault();
 
@@ -20,16 +20,16 @@ document.addEventListener('DOMContentLoaded', function(){
     const value = addForm.querySelector('input[type="text"]').value;
     const li = document.createElement('li');
     const checkBox = document.createElement('input');
-    const bookName = document.createElement('span');
+    const packName = document.createElement('span');
     const deleteBtn = document.createElement('span');
 
     // add text content
-    bookName.textContent = value;
+    packName.textContent = value;
     deleteBtn.textContent = 'delete';
 
     // add classes
     checkBox.classList.add('unpacked');
-    bookName.classList.add('name');
+    packName.classList.add('name');
     deleteBtn.classList.add('delete');
     
     //add type for checkbox
@@ -37,12 +37,12 @@ document.addEventListener('DOMContentLoaded', function(){
 
     // append to DOM
     li.appendChild(checkBox);
-    li.appendChild(bookName);
+    li.appendChild(packName);
     li.appendChild(deleteBtn);
     list.appendChild(li);
   });
 
-  // hide books
+  // hide packs
   const hideBox = document.querySelector('#hide');
   hideBox.addEventListener('change', function(e){
     if(hideBox.checked){
@@ -52,17 +52,17 @@ document.addEventListener('DOMContentLoaded', function(){
     }
   });
 
-  // filter books
-  const searchBar = forms['search-books'].querySelector('input');
+  // filter packs
+  const searchBar = forms['search-packs'].querySelector('input');
   searchBar.addEventListener('keyup', (e) => {
     const term = e.target.value.toLowerCase();
-    const books = list.getElementsByTagName('li');
-    Array.from(books).forEach((book) => {
-      const title = book.firstElementChild.textContent;
+    const packs = list.getElementsByTagName('li');
+    Array.from(packs).forEach((pack) => {
+      const title = pack.firstElementChild.textContent;
       if(title.toLowerCase().indexOf(e.target.value) != -1){
-        book.style.display = 'block';
+        pack.style.display = 'block';
       } else {
-        book.style.display = 'none';
+        pack.style.display = 'none';
       }
     });
   });

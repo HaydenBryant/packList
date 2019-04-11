@@ -44,22 +44,22 @@ h1, h2{
     color: #444;
 }
 
-#book-list, #add-book, #tabbed-content{
+#pack-list, #add-pack, #tabbed-content{
     margin: 30px;
 }
 
-#book-list ul, #tabbed-content ul{
+#pack-list ul, #tabbed-content ul{
     list-style-type: none;
     padding: 0;
 }
 
-#book-list li{
+#pack-list li{
     padding: 20px;
     border-left: 5px solid #ddd;
     margin: 20px 10px;
 }
 
-#book-list li:hover{
+#pack-list li:hover{
     border-color: #9361bf;
 }
 
@@ -76,12 +76,12 @@ h1, h2{
     background: #333;
 }
 
-#add-book{
+#add-pack{
     width: 400px;
     margin: 0 auto;
 }
 
-#add-book input{
+#add-pack input{
     display: block;
     margin: 20px 0;
     padding: 10px;
@@ -94,7 +94,7 @@ h1, h2{
     clear: both;
 }
 
-#add-book button{
+#add-pack button{
     border: 1px solid #9361bf;
     background: #9361bf;
     padding: 10px 20px;
@@ -110,17 +110,17 @@ h1, h2{
     color: white;
 }
 
-#add-book:after{
+#add-pack:after{
     content: '';
     display: block;
     clear: both;
 }
 
-#add-book #hide{
+#add-pack #hide{
   width: 30px;
 }
 
-#add-book label{
+#add-pack label{
   line-height: 52px;
 }
 
@@ -145,6 +145,5 @@ h1, h2{
 }
 
 input:checked{
-  color: red;
-  height: 100px;
+    
 }
