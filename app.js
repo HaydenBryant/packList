@@ -68,22 +68,30 @@ document.addEventListener('DOMContentLoaded', function(){
   });
   
   //  checked items become packed
-  const packed = document.querySelector('')
-
-  // tabbed content
-  const tabs = document.querySelector('.tabs');
-  const panels = document.querySelectorAll('.panel');
-  tabs.addEventListener('click', (e) => {
-    if(e.target.tagName == 'LI'){
-      const targetPanel = document.querySelector(e.target.dataset.target);
-      Array.from(panels).forEach((panel) => {
-        if(panel == targetPanel){
-          panel.classList.add('active');
-        }else{
-          panel.classList.remove('active');
-        }
-      });
+  const checkBox1 = document.querySelector('.unpacked', '.packed');
+  checkBox1.addEventListener('click', (e) => {
+    if(e.target.className == 'unpacked'){
+      e.target.className = 'packed';
+    }
+    else if(e.target.className == 'packed'){
+      e.target.className = 'unpacked';
     }
   });
+
+  // tabbed content
+  // const tabs = document.querySelector('.tabs');
+  // const panels = document.querySelectorAll('.panel');
+  // tabs.addEventListener('click', (e) => {
+  //   if(e.target.tagName == 'LI'){
+  //     const targetPanel = document.querySelector(e.target.dataset.target);
+  //     Array.from(panels).forEach((panel) => {
+  //       if(panel == targetPanel){
+  //         panel.classList.add('active');
+  //       }else{
+  //         panel.classList.remove('active');
+  //       }
+  //     });
+  //   }
+  // });
 
 })
