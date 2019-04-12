@@ -1,38 +1,40 @@
-body{
+body {
     font-family: Tahoma;
     color: #444;
     letter-spacing: 1px;
 }
 
-h1, h2{
+h1,
+h2 {
     font-weight: normal;
 }
 
-#wrapper{
+#wrapper {
     width: 90%;
     max-width: 960px;
     margin: 20px auto;
     border-radius: 6px;
-    box-shadow: 0px 1px 6px rgba(0,0,0,0.2);
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.2);
     box-sizing: border-box;
     padding: 0 0 20px;
     overflow: hidden;
     border: 1px solid lightgray;
 }
 
-#page-banner{
-    background: #eee ;
+#page-banner {
+    background: #eee;
     padding: 10px 0;
 
 }
 
-#page-banner h1, #page-banner p{
+#page-banner h1,
+#page-banner p {
     width: 100%;
     text-align: center;
     margin: 10px 0;
 }
 
-#page-banner input{
+#page-banner input {
     width: 90%;
     max-width: 300px;
     margin: 20px auto;
@@ -44,26 +46,29 @@ h1, h2{
     color: #444;
 }
 
-#pack-list, #add-pack, #tabbed-content{
+#pack-list,
+#add-item,
+#tabbed-content {
     margin: 30px;
 }
 
-#pack-list ul, #tabbed-content ul{
+#pack-list ul,
+#tabbed-content ul {
     list-style-type: none;
     padding: 0;
 }
 
-#pack-list li{
+#pack-list li {
     padding: 20px;
     border-left: 5px solid #ddd;
     margin: 20px 10px;
 }
 
-#pack-list li:hover{
+#pack-list li:hover {
     border-color: #9361bf;
 }
 
-.delete{
+.delete {
     float: right;
     background: #9361bf;
     padding: 6px;
@@ -72,16 +77,16 @@ h1, h2{
     color: white;
 }
 
-.delete:hover{
+.delete:hover {
     background: #333;
 }
 
-#add-pack{
+#add-item {
     width: 400px;
     margin: 0 auto;
 }
 
-#add-pack input{
+#add-item input {
     display: block;
     margin: 20px 0;
     padding: 10px;
@@ -94,7 +99,7 @@ h1, h2{
     clear: both;
 }
 
-#add-pack button{
+#add-item button {
     border: 1px solid #9361bf;
     background: #9361bf;
     padding: 10px 20px;
@@ -110,21 +115,21 @@ h1, h2{
     color: white;
 }
 
-#add-pack:after{
+#add-item:after {
     content: '';
     display: block;
     clear: both;
 }
 
-#add-pack #hide{
-  width: 30px;
+#add-item #hide {
+    width: 30px;
 }
 
-#add-pack label{
-  line-height: 52px;
+#add-item label {
+    line-height: 52px;
 }
 
-#tabbed-content li{
+#tabbed-content li {
     display: inline-block;
     padding: 10px 14px;
     background: #ddd;
@@ -133,17 +138,17 @@ h1, h2{
     margin-right: 10px;
 }
 
-#tabbed-content .panel{
+#tabbed-content .panel {
     display: none;
     border: 1px solid #ddd;
     padding: 0 10px;
     border-radius: 4px;
 }
 
-#tabbed-content .panel.active{
+#tabbed-content .panel.active {
     display: block;
 }
 
-input:checked{
-    
+.packed.nextSibling{
+    text-decoration: line-through;
 }
