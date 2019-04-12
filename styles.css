@@ -149,6 +149,6 @@ h2 {
     display: block;
 }
 
-.packed.nextSibling{
+.packed{
     text-decoration: line-through;
 }
