@@ -9,6 +9,12 @@ $(document).ready(function() {
             alert("Please enter an item!")
         }
     });
-
-
+    
+    $('#hide').click(function(){
+       $("#pack-list").slideToggle(); 
+    });
+    
+    $('#pack-list').on('click', '.delete', function(){
+        $(this.parentElement).remove();
+    });
 });
