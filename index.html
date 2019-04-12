@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<link href="styles.css" rel="stylesheet" />
-	<script src="app.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<title>PackList Web App</title>
 </head>
 
@@ -27,28 +27,13 @@
 					<span class="name">Backpack</span>
 					<span class="delete">delete</span>
 				</li>
-				<li>
-					<input class="unpacked" type="checkbox" />
-					<span class="name">Shirts</span>
-					<span class="delete">delete</span>
-				</li>
-				<li>
-					<input class="unpacked" type="checkbox" />
-					<span class="name">Pants</span>
-					<span class="delete">delete</span>
-				</li>
-				<li>
-					<input class="unpacked" type="checkbox" />
-					<span class="name">Socks</span>
-					<span class="delete">delete</span>
-				</li>
 			</ul>
 		</div>
 		<form id="add-pack">
 			<input type="checkbox" id="hide" />
 			<label for="hide">Hide all packs</label>
-			<input type="text" placeholder="Add a pack..." />
-			<button>Add</button>
+			<input class="addItem" type="text" placeholder="Add a pack..." />
+			<button class="add" type='button'>Add</button>
 		</form>
 		<!--<div id="tabbed-content">-->
 		<!--	<ul class="tabs">-->
@@ -64,6 +49,7 @@
 		<!--		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id nunc porta urna ornare rhoncus. Ut convallis ante at.</p>-->
 		<!--	</div>-->
 		<!--</div>-->
+			<script src="index.js"></script>
 	</div>
 </body>
 
